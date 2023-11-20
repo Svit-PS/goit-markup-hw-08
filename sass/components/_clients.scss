@@ -1,0 +1,30 @@
+.client-list {
+    display: flex;
+    gap: 30px;
+}
+
+.client-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid $client-border;
+    border-radius: 4px;
+    width: 170px;
+    height: 92px;
+    transition: border-color $time $cub-bezier;
+
+    &:hover,
+    &:focus {
+        border-color: $accent-txt-color;
+    }
+}
+
+.client-svg {
+    fill: $client-border;
+    transition: fill $time $cub-bezier;
+
+    .client-link:hover &,
+    .client-link:focus & {
+        fill: $accent-txt-color;
+    }
+}

@@ -1,0 +1,56 @@
+.social-list {
+    display: flex;
+    gap: 10px;
+    margin-top: 16px;
+}
+
+.social-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    transition: background-color $time $cub-bezier;
+
+    &:hover,
+    &:focus {
+        background-color: $accent-txt-color;
+    }
+}
+
+.social-svg {
+    fill: $client-border;
+    transition: fill $time $cub-bezier;
+
+    .social-link:hover &,
+    .social-link:focus & {
+        fill: $white-txt-color;
+    }
+}
+
+.social-flooter-list {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.social-flooter-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.1);
+    transition: background-color $time $cub-bezier;
+
+    &:hover,
+    &:focus {
+        background-color: $accent-txt-color;
+    }
+}
+
+.social-flooter-svg {
+    fill: $white-txt-color;
+}

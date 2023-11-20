@@ -1,0 +1,28 @@
+.works-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.works-item {
+    flex-basis: calc((100% - 60px) / 3);
+    position: relative;
+}
+
+.works-item-title {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-align: center;
+    text-transform: uppercase;
+    color: $white-txt-color;
+    padding-top: 27px;
+    padding-bottom: 27px;
+    background-color: $dark-bcg-color;
+    opacity: 0.8;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+}

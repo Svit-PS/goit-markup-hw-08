@@ -1,0 +1,97 @@
+body {
+    font-family: $main-font;
+    background-color: $main-bcg-color;
+    color: $main-txt-color;
+}
+
+.container {
+    width: $width-container;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+
+    /* outline: tomato solid 5px; */
+}
+
+.link {
+    color: currentColor;
+    text-decoration: none;
+
+    &:hover,
+    &:focus {
+        color: $accent-txt-color;
+    }
+}
+
+li,
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    padding-inline-start: 0;
+}
+
+img {
+    display: block;
+}
+
+ul,
+h1,
+h2,
+h3,
+p {
+    margin: 0;
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.section-title {
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.17;
+    letter-spacing: 1.08px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.btn {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.88;
+    letter-spacing: 0.06em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 216px;
+    height: 50px;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+    margin: 0 auto;
+    color: $white-txt-color;
+    background-color: $accent-txt-color;
+    box-shadow: 0px 4px 4px 0px #00000026;
+}
+
+.btn-width {
+    width: 200px;
+}

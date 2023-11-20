@@ -1,0 +1,120 @@
+.portf-btn-box {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin-bottom: 50px;
+}
+
+.portfolio-btn {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.63;
+    letter-spacing: 0.03em;
+    text-align: center;
+    background-color: $secondary-bcg-color;
+    color: $main-txt-color;
+    height: 38px;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+    padding: 6px 22px;
+    transition: color $time $cub-bezier,
+        background-color $time $cub-bezier,
+        box-shadow $time $cub-bezier;
+
+    &:focus,
+    &:hover {
+        color: $white-txt-color;
+        background-color: $accent-txt-color;
+        box-shadow: 0px 2px 2px 0px #0000001f, 0px 1px 2px 0px #00000014,
+            0px 3px 1px 0px #0000001a;
+    }
+}
+
+.accent-btn {
+    color: $white-txt-color;
+    background-color: $accent-txt-color;
+    box-shadow: 0px 2px 2px 0px #0000001f, 0px 1px 2px 0px #00000014,
+        0px 3px 1px 0px #0000001a;
+}
+
+.portfolio-list {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 30px;
+    row-gap: 30px;
+}
+
+.portfolio-item {
+    flex-basis: calc((100% - 60px) / 3);
+    background: $main-bcg-color;
+}
+
+.portfolio-link {
+    display: block;
+    color: currentColor;
+    text-decoration: none;
+    position: relative;
+    transition: box-shadow $time $cub-bezier;
+
+    &:hover,
+    &:focus {
+        box-shadow: 1px 4px 6px 0px #00000029, 0px 4px 4px 0px #0000000f,
+            0px 1px 1px 0px #0000001f;
+    }
+}
+
+.portfolio-link-box {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 24px;
+    padding-right: 24px;
+    border-bottom: 1px solid $portfolio-bcg-color;
+    border-left: 1px solid $portfolio-bcg-color;
+    border-right: 1px solid $portfolio-bcg-color;
+}
+
+.portfolio-title {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    text-align: left;
+    margin-bottom: 4px;
+}
+
+.portfolio-text {
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.03em;
+    text-align: left;
+    color: $secondary-txt-color;
+}
+
+.portfolio-box {
+    position: relative;
+    overflow: hidden;
+}
+
+.description-text {
+    font-size: 18px;
+    line-height: 1.6;
+    letter-spacing: 0.03em;
+    text-align: left;
+    color: $white-txt-color;
+    background-color: $accent-txt-color;
+    opacity: 0.9;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 63px 24px;
+    transform: translateY(100%);
+    transition: transform $time $cub-bezier;
+
+    .portfolio-link:hover &,
+    .portfolio-link:focus & {
+        transform: translateY(0);
+    }
+}
