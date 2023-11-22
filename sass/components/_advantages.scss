@@ -3,13 +3,24 @@
 }
 
 .adv-list {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 30px;
+  @include mq(tablet) {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
 }
 
 .adv-item {
-  flex-basis: calc((100% - 90px) / 4);
+  padding-bottom: 30px;
+
+  @include mq(tablet) {
+    flex-basis: calc((100% - 30px) / 2);
+  }
+
+  @include mq(descktop) {
+    flex-basis: calc((100% - 90px) / 4);
+    padding-bottom: 0;
+  }
 }
 
 .adv-box-svg {
@@ -20,19 +31,19 @@
   height: 120px;
 }
 
-.adv-bcg {
-  &::before {
-    content: "";
-    display: block;
-    background-image: url(../images/svg/astronaut.svg);
-    background-color: $secondary-bcg-color;
-    background-position: center;
-    background-size: 70px 70px;
-    background-repeat: no-repeat;
-    height: 120px;
-    width: 270px;
-  }
-}
+// .adv-bcg {
+//   &::before {
+//     content: "";
+//     display: block;
+//     background-image: url(../images/svg/astronaut.svg);
+//     background-color: $secondary-bcg-color;
+//     background-position: center;
+//     background-size: 70px 70px;
+//     background-repeat: no-repeat;
+//     height: 120px;
+//     width: 270px;
+//   }
+// }
 
 .advan-title {
   font-size: 14px;
@@ -43,6 +54,10 @@
   text-transform: uppercase;
   margin-top: 30px;
   margin-bottom: 10px;
+
+  @include mq(mobile-only) {
+    text-align: center;
+  }
 }
 
 .advan-text {

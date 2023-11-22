@@ -151,7 +151,12 @@
                         <h3 class="advan-title">ПЛАНУВАННЯ</h3>
                         <p class=" advan-text">Так само консультація з широким активом значною мірою зумовлює.</p>
                     </li>
-                    <li class="adv-item adv-bcg">
+                    <li class="adv-item">
+                        <div class="adv-box-svg">
+                            <svg class="adv-svg" width="70" height="70">
+                                <use href="./images/svg/sprite.svg#icon-astronaut"> </use>
+                            </svg>
+                        </div>
                         <h3 class="advan-title">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
                         <p class=" advan-text">Значимість цих проблем настільки очевидна, що реалізація планових
                             завдань.</p>
@@ -186,7 +191,7 @@
                 <h2 class="section-title">Наша команда</h2>
                 <ul class="team-list">
                     <li class="adv-item team-item">
-                        <img src="./images/main/teamcard1.jpg" alt="Ігор Дем'яненко" width="270" height="260">
+                        <img class="team-foto" src="./images/main/teamcard1.jpg" alt="Ігор Дем'яненко">
                         <div class="team-box">
                             <h3 class="team-title">Ігор Дем'яненко</h3>
                             <p class="team-text">Product Designer</p>
@@ -223,7 +228,7 @@
                         </div>
                     </li>
                     <li class="adv-item team-item">
-                        <img src="./images/main/teamcard2.jpg" alt="Ольга Рєпіна" width="270" height="260">
+                        <img class="team-foto" src="./images/main/teamcard2.jpg" alt="Ольга Рєпіна">
                         <div class="team-box">
                             <h3 class="team-title">Ольга Рєпіна</h3>
                             <p class="team-text">Frontend Developer</p>
@@ -260,7 +265,7 @@
                         </div>
                     </li>
                     <li class="adv-item team-item">
-                        <img src="./images/main/teamcard3.jpg" alt="Микола Тарасов" width="270" height="260">
+                        <img class="team-foto" src="./images/main/teamcard3.jpg" alt="Микола Тарасов">
                         <div class="team-box">
                             <h3 class="team-title">Микола Тарасов</h3>
                             <p class="team-text">Marketing</p>
@@ -297,7 +302,7 @@
                         </div>
                     </li>
                     <li class="adv-item team-item">
-                        <img src="./images/main/teamcard4.jpg" alt="Михайло Єрмаков" width="270" height="260">
+                        <img class="team-foto" src="./images/main/teamcard4.jpg" alt="Михайло Єрмаков">
                         <div class="team-box">
                             <h3 class="team-title">Михайло Єрмаков</h3>
                             <p class="team-text">UI Designer</p>
@@ -390,51 +395,54 @@
     </main>
 
     <footer class="flooter">
-        <div class="container fl-box">
-            <div class="fl-box1">
-                <a class="logo1 link" href="./index.html">Web<span class="logo3">Studio</span></a>
-                <address class="address">м. Київ, пр-т Лесі Українки, 26
-                    <ul class="adress-list">
-                        <li><a class="link flooter-link" href="mailto:spolonchuk@gmail.com">info@devstudio.com</a>
+        <div class="container  fl-box">
+            <div class="fl-box12">
+                <div class="fl-box1">
+                    <a class="logo1 link" href="./index.html">Web<span class="logo3">Studio</span></a>
+                    <address class="address">м. Київ, пр-т Лесі Українки, 26
+                        <ul class="adress-list">
+                            <li><a class="link flooter-link" href="mailto:spolonchuk@gmail.com">info@devstudio.com</a>
+                            </li>
+                            <li class="address-item"><a class="link flooter-link" href="tel:+380961111111">+38 096 111
+                                    11
+                                    11</a>
+                            </li>
+                        </ul>
+                    </address>
+                </div>
+                <div class="fl-box2">
+                    <p class="flooter-title">приєднуйтесь</p>
+                    <ul class="social-flooter-list">
+                        <li class="social-item">
+                            <a href="" class="social-flooter-link">
+                                <svg class="social-flooter-svg" width="20" height="20">
+                                    <use href="./images/svg/sprite.svg#icon-instagram"> </use>
+                                </svg>
+                            </a>
                         </li>
-                        <li class="address-item"><a class="link flooter-link" href="tel:+380961111111">+38 096 111 11
-                                11</a>
+                        <li class="social-item">
+                            <a href="" class="social-flooter-link">
+                                <svg class="social-flooter-svg" width="20" height="20">
+                                    <use href="./images/svg/sprite.svg#icon-twitter"> </use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="social-item">
+                            <a href="" class="social-flooter-link">
+                                <svg class="social-flooter-svg" width="20" height="20">
+                                    <use href="./images/svg/sprite.svg#icon-facebook"> </use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="social-item">
+                            <a href="" class="social-flooter-link">
+                                <svg class="social-flooter-svg" width="20" height="20">
+                                    <use href="./images/svg/sprite.svg#icon-linkedin"> </use>
+                                </svg>
+                            </a>
                         </li>
                     </ul>
-                </address>
-            </div>
-            <div class="fl-box2">
-                <p class="flooter-title">приєднуйтесь</p>
-                <ul class="social-flooter-list">
-                    <li class="social-item">
-                        <a href="" class="social-flooter-link">
-                            <svg class="social-flooter-svg" width="20" height="20">
-                                <use href="./images/svg/sprite.svg#icon-instagram"> </use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="social-item">
-                        <a href="" class="social-flooter-link">
-                            <svg class="social-flooter-svg" width="20" height="20">
-                                <use href="./images/svg/sprite.svg#icon-twitter"> </use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="social-item">
-                        <a href="" class="social-flooter-link">
-                            <svg class="social-flooter-svg" width="20" height="20">
-                                <use href="./images/svg/sprite.svg#icon-facebook"> </use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="social-item">
-                        <a href="" class="social-flooter-link">
-                            <svg class="social-flooter-svg" width="20" height="20">
-                                <use href="./images/svg/sprite.svg#icon-linkedin"> </use>
-                            </svg>
-                        </a>
-                    </li>
-                </ul>
+                </div>
             </div>
             <div class="fl-box3">
                 <p class="flooter-title">Підпишіться на розсилку</p>
@@ -452,7 +460,7 @@
     </footer>
 
     <script src="./js/modal.js"></script>
-    </script>
+    <script src="./js/mobile-menu.js"></script>
 </body>
 
 </html>

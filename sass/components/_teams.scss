@@ -3,9 +3,11 @@
 }
 
 .team-list {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 30px;
+    @include mq(tablet) {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+    }
 }
 
 .team-item {
@@ -15,11 +17,26 @@
     background-color: $main-bcg-color;
 }
 
+.team-foto {
+    width: 450px;
+    height: 460px;
+
+    @include mq(tablet) {
+        width: 354px;
+        height: 374px;
+    }
+
+    @include mq(descktop) {
+        width: 270px;
+        height: 260px;
+    }
+}
+
 .team-box {
     padding-top: 30px;
     padding-bottom: 30px;
-    padding-left: 32px;
-    padding-right: 32px;
+    // padding-left: 32px;
+    // padding-right: 32px;
 }
 
 .team-title {
@@ -29,6 +46,7 @@
     letter-spacing: 0.03em;
     text-align: center;
     margin-bottom: 10px;
+
 }
 
 .team-text {
@@ -37,4 +55,5 @@
     letter-spacing: 0.03em;
     text-align: center;
     color: $secondary-txt-color;
+    margin-bottom: 16px;
 }

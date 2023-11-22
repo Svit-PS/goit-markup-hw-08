@@ -2,7 +2,22 @@
     display: flex;
     justify-content: center;
     gap: 8px;
-    margin-bottom: 50px;
+    margin-bottom: 40px;
+
+    @include mq(mobile-only) {
+        width: 80%;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        row-gap: 15px;
+    }
+
+    @include mq(tablet) {
+        margin-bottom: 30px;
+    }
+
+    @include mq(tablet) {
+        margin-bottom: 50px;
+    }
 }
 
 .portfolio-btn {
@@ -46,8 +61,21 @@
 }
 
 .portfolio-item {
-    flex-basis: calc((100% - 60px) / 3);
     background: $main-bcg-color;
+    flex-basis: 100%;
+
+    @include mq(tablet) {
+        flex-basis: calc((100% - 30px) / 2);
+    }
+
+    @include mq(descktop) {
+        flex-basis: calc((100% - 60px) / 3);
+    }
+}
+
+.portfolio-img {
+    width: 100%;
+    height: 294px;
 }
 
 .portfolio-link {
