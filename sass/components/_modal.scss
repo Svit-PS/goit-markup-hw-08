@@ -24,10 +24,13 @@
     background-color: $main-bcg-color;
     position: absolute;
     padding: 40px;
-    width: 450px;
-    height: 609px;
+    max-width: 450px;
+    max-height: 609px;
+    width: 90%;
+    height: 90%;
     top: 50%;
     left: 50%;
+    overflow-y: scroll;
     transition: transform $time $cub-bezier 200ms;
 
     .backdrop.is-hidden & {
@@ -43,8 +46,8 @@
     }
 
     @include mq(descktop) {
-        width: 528px;
-        height: 581px;
+        max-width: 528px;
+        max-height: 581px;
     }
 
 }

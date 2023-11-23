@@ -9,6 +9,10 @@
 
 .container__header {
   @extend .flex-center;
+
+  @include mq(mobile-only) {
+    justify-content: space-between;
+  }
 }
 
 .navigation {

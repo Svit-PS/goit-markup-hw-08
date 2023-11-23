@@ -1,0 +1,124 @@
+.mob-menu-btn {
+    @include mq(tablet) {
+        display: none;
+    }
+
+    border: none;
+    background-color: transparent;
+}
+
+.mob-menu-svg {
+    fill: $main-txt-color;
+    transition: fill $time $cub-bezier;
+
+    .mob-menu-btn:hover &,
+    .mob-menu-btn:focus & {
+        fill: $accent-txt-color;
+    }
+}
+
+.menu-container {
+    background-color: $main-bcg-color;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 48px 40px;
+    z-index: 999;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    transform: translateX(100%);
+    transition: transform $time $cub-bezier;
+}
+
+.menu-container.is-open {
+    transform: translateX(0);
+}
+
+.mob-menu-close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    border: none;
+    background-color: transparent;
+}
+
+.mob-menu_list {}
+
+.mob-menu_item:not(:last-child) {
+    margin-bottom: 32px;
+}
+
+.mob-menu__link {
+    font-size: 40px;
+    font-weight: 500;
+    line-height: 1.18;
+    letter-spacing: 0.02em;
+    text-align: left;
+    color: $main-txt-color;
+
+    .mob-menu__link:hover,
+    .mob-menu__link:focus {
+        color: $accent-txt-color;
+    }
+}
+
+.mob-menu__accent-link {
+    color: $accent-txt-color;
+}
+
+.mob-menu__contact {}
+
+.mob-menu__tel {
+    font-size: 34px;
+    font-weight: 500;
+    line-height: 1.18;
+    letter-spacing: 0.02em;
+    text-align: left;
+    color: $accent-txt-color;
+
+}
+
+.mob-menu-item__tel {
+    margin-bottom: 32px;
+}
+
+.mob-menu__mail {
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 1.17;
+    letter-spacing: 0.02em;
+    text-align: left;
+    color: $secondary-txt-color;
+}
+
+.mob-menu-item__mail {
+    margin-bottom: 64px;
+}
+
+.mob-menu-social {
+    display: flex;
+    gap: 0px;
+}
+
+.mob-menu-social_item {
+    padding-left: 10px;
+    padding-right: 10px;
+    height: 22px;
+
+    &:not(:last-child) {
+        border-right: rgba(33, 33, 33, 0.2) solid 1px;
+    }
+}
+
+.mob-menu-social_link {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.22;
+    letter-spacing: 0.02em;
+    text-align: left;
+    color: $accent-txt-color;
+}
