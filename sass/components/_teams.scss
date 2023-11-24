@@ -27,15 +27,6 @@
 
 .team-foto {
     width: 100%;
-    height: 460px;
-
-    @include mq(tablet) {
-        height: 374px;
-    }
-
-    @include mq(descktop) {
-        height: 260px;
-    }
 }
 
 .team-box {

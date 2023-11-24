@@ -53,12 +53,16 @@
 }
 
 .mob-menu__link {
-    font-size: 40px;
+    font-size: 34px;
     font-weight: 500;
     line-height: 1.18;
     letter-spacing: 0.02em;
     text-align: left;
     color: $main-txt-color;
+
+    @media screen and (min-width: 380px) {
+        font-size: 40px;
+    }
 
     .mob-menu__link:hover,
     .mob-menu__link:focus {
@@ -73,13 +77,16 @@
 .mob-menu__contact {}
 
 .mob-menu__tel {
-    font-size: 34px;
+    font-size: 26px;
     font-weight: 500;
     line-height: 1.18;
     letter-spacing: 0.02em;
     text-align: left;
     color: $accent-txt-color;
 
+    @media screen and (min-width: 380px) {
+        font-size: 34px;
+    }
 }
 
 .mob-menu-item__tel {
@@ -87,12 +94,16 @@
 }
 
 .mob-menu__mail {
-    font-size: 24px;
+    font-size: 20px;
     font-weight: 500;
     line-height: 1.17;
     letter-spacing: 0.02em;
     text-align: left;
     color: $secondary-txt-color;
+
+    @media screen and (min-width: 380px) {
+        font-size: 24px;
+    }
 }
 
 .mob-menu-item__mail {
@@ -101,6 +112,7 @@
 
 .mob-menu-social {
     display: flex;
+    flex-wrap: wrap;
     gap: 0px;
 }
 
@@ -115,10 +127,14 @@
 }
 
 .mob-menu-social_link {
-    font-size: 18px;
+    font-size: 8px;
     font-weight: 500;
     line-height: 1.22;
     letter-spacing: 0.02em;
     text-align: left;
     color: $accent-txt-color;
+
+    @media screen and (min-width: 380px) {
+        font-size: 18px;
+    }
 }

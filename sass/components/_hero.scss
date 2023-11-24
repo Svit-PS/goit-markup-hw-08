@@ -12,10 +12,11 @@
     background-size: cover;
     padding-top: 118px;
     padding-bottom: 118px;
-    max-width: 480px;
+    max-width: 1600px;
+    //width: 480px;
 
     @include mq(tablet) {
-        max-width: 768px;
+        // width: 768px;
         background-image: linear-gradient(to right, $hero-bcg, $hero-bcg),
             url("../images/hero/hero-img_md_1x.jpg");
 
@@ -26,7 +27,7 @@
     }
 
     @include mq(descktop) {
-        max-width: 1200px;
+        // width: 1200px;
         padding-top: 200px;
         padding-bottom: 200px;
         background-image: linear-gradient(to right, $hero-bcg, $hero-bcg),
@@ -40,8 +41,8 @@
 }
 
 .hero--position {
-    margin-right: auto;
-    margin-left: auto;
+    // margin-right: auto;
+    // margin-left: auto;
 }
 
 .hero__title {
@@ -52,10 +53,10 @@
     letter-spacing: 0.06em;
     text-align: center;
     text-transform: uppercase;
-    width: 360px;
+    max-width: 360px;
 
     @include mq(descktop) {
-        width: 696px;
+        max-width: 696px;
         font-size: 44px;
         line-height: 1.36;
     }
@@ -63,7 +64,5 @@
 }
 
 .hero__title-position {
-    margin-bottom: 30px;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto 30px auto;
 }
