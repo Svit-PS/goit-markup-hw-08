@@ -18,11 +18,15 @@
 }
 
 .menu-container {
+    @include mq(tablet) {
+        display: none;
+    }
+
     background-color: $main-bcg-color;
     position: fixed;
     top: 0;
     left: 0;
-    width: 100%;
+    width: 480px;
     height: 100%;
     padding: 48px 40px;
     z-index: 999;

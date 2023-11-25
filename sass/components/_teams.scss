@@ -30,10 +30,14 @@
 }
 
 .team-box {
-    padding-top: 30px;
-    padding-bottom: 30px;
-    // padding-left: 32px;
-    // padding-right: 32px;
+    padding-top: 24px;
+    padding-bottom: 24px;
+
+    @include mq(descktop) {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
 }
 
 .team-title {
