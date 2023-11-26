@@ -272,7 +272,7 @@ p {
 }
 @media screen and (min-width: 1200px) {
   .header__contact--position {
-    gap: 30px;
+    gap: 40px;
   }
 }
 
