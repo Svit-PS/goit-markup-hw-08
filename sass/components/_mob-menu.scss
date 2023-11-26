@@ -27,17 +27,19 @@
     top: 0;
     left: 0;
     //width: 320px;
-    max-width: 480px;
+    //max-width: 768px;
+    width: 100%;
     height: 100%;
     padding: 48px 40px;
     z-index: 999;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-
+    margin-right: auto;
+    margin-left: auto;
     transform: translateX(200%);
     transition: transform $time $cub-bezier;
-
+    //outline: red solid;
 }
 
 .menu-container.is-open {
