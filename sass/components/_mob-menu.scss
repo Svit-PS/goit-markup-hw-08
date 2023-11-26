@@ -26,7 +26,7 @@
     position: fixed;
     top: 0;
     left: 0;
-    width: 480px;
+    width: 320px;
     height: 100%;
     padding: 48px 40px;
     z-index: 999;
@@ -36,6 +36,18 @@
 
     transform: translateX(100%);
     transition: transform $time $cub-bezier;
+
+    @media screen and (min-width: 380px) {
+        width: 380px;
+    }
+
+    @media screen and (min-width: 450px) {
+        width: 450px;
+    }
+
+    @media screen and (min-width: 480px) {
+        width: 480px;
+    }
 }
 
 .menu-container.is-open {
